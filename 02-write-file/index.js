@@ -3,9 +3,7 @@ const { stdin: input, stdout: output } = require('node:process');
 const fs = require('node:fs');
 const path = require('path');
 
-const writeStream = fs.createWriteStream(path.join(__dirname, './text.txt'), {
-  flags: 'w',
-});
+const writeStream = fs.createWriteStream(path.join(__dirname, 'text.txt'));
 const rl = readline.createInterface({ input, output });
 
 console.log('Hello! Start typing. Type "exit" to quit:');
